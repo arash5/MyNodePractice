@@ -10,8 +10,8 @@ http.createServer(function (req, res) {
 
     res.writeHead(200, { 'Content-Type': 'text/html' });
     var html = fs.readFileSync('./views/index.html', 'utf8');
-    //var message = 'Hello world...';
-    //html = html.replace('{Message}', message);
+    var message = 'Hello world...';
+    html = html.replace('{Message}', message);
     res.end(html);
 
 }).listen(port, ip);
