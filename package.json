@@ -2,8 +2,9 @@
   "name": "simplenodeapp",
   "version": "0.0.0",
   "description": "Node.js sample app ",
+  "main": "server.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node server.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
